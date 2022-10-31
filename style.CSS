@@ -1,0 +1,136 @@
+.info_sup{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.titulo{
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.Texto_desc{
+    margin-left: 15%;
+    width: 55%;   
+    font-size: 18px; 
+}
+
+.titulo_desc{
+    font-weight: bold;
+}
+
+.info_titu{
+    margin-top: 2%;
+    width: 50%;   
+}
+
+.Grid{   
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 23% ;
+    margin-right: 15%;    
+        
+}
+
+.Porfile_pic{
+    height: 280px;
+}
+
+.info_crew{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.info_crew:nth-child(3n+2) {
+    margin-top: 30%;
+}
+
+.Pic_name{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.Crew_pos{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 12px;
+    margin-left: 2%;
+}
+
+.name{
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+.info_pag{
+    color: rgba(189, 189, 189, 1);
+    font-weight: 500;
+    font-size: 14px;
+    width: 287px;
+    height: 17px;   
+    margin-left: 40%;
+    margin-top: 15%;
+    margin-bottom: 24px;    
+}
+
+.username{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 620px) {
+    .info_sup{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+       
+    }
+    .titulo{
+        margin-bottom: 10%;
+        margin-top: 15%;
+    }
+    .Texto_desc{
+        margin: 0;
+        width: 100%;
+    }
+    .titulo_desc{
+        margin-bottom: 10%;
+        font-size: 18px; 
+    }
+    .info_titu{
+        width: 90%;
+        font-size: 16px; 
+        margin-bottom: 15%;
+    }
+    .Crew_pos{
+        font-size: 10px;
+    }
+    .Pic_name{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .Grid{   
+        grid-template-columns: 1fr 1fr;
+        margin-left: 5%;
+        column-gap: 8%;
+    }
+    .info_crew:nth-child(3n+2) {
+        margin-top: 0%;
+    }
+
+     .info_crew:nth-child(2n+2){
+        margin-top: 50px;
+    }
+    .info_pag{
+        margin-left: 30%;
+
+    }
+    
+}
